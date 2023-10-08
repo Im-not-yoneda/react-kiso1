@@ -1,8 +1,16 @@
 import React from "react";
+import "./App.css";
+import { Thread } from "./thread";
+import { Header } from "./Header";
 
 /**
  * @type {() => JSX.Element}
  */
 export const App = () => {
-  return <h1>Hello,world!</h1>;
+  return (
+    <div>
+      <Header />
+      <Thread />
+    </div>
+  );
 };
