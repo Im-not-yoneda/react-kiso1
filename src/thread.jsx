@@ -17,7 +17,12 @@ export const Thread = () => {
       return setThread(titles);
     });
 
-  return <ul>{thread}</ul>;
+  return (
+    <div>
+      <h2>新着スレッド</h2>
+      <ul>{thread}</ul>
+    </div>
+  );
 };
 
 export default Thread;
