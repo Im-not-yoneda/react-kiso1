@@ -1,8 +1,9 @@
 import React from "react";
+import { Thread } from "./thread";
 
 /**
  * @type {() => JSX.Element}
  */
 export const App = () => {
-  return <h1>Hello,world!</h1>;
+  return <Thread />;
 };
