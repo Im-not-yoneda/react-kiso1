@@ -18,7 +18,7 @@ export const Thread = () => {
     });
 
   return (
-    <div>
+    <div className="thread">
       <h2>新着スレッド</h2>
       <ul>{thread}</ul>
     </div>
