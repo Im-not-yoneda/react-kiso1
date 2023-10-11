@@ -7,14 +7,22 @@ h1 {
   color: white;
   background-color: #62d18e;
 }
+.header a {
+  font-size: 20px;
+  color: white;
+  top: -63px;
+  right: 50px;
+  float: right;
+  position: relative;
+}
 .thread {
   background-color: #d9d9d9;
-  padding: 50px 0 100px 0;
+  padding: 0 0 100px 0;
 }
-.thread h2 {
+h2 {
   font-size: 35px;
   margin: 0 30%;
-  padding-bottom: 35px;
+  padding: 50px 0 35px 0;
 }
 .thread ul {
   padding: 0;
@@ -29,4 +37,34 @@ h1 {
 }
 .thread li + li {
   border-top: 1px solid;
+}
+.new {
+  padding-bottom: 55%;
+  background-color: #d9d9d9;
+}
+
+.new form {
+  margin-left: 30%;
+}
+.new form input {
+  font-size: 30px;
+  padding: 13px 120px 13px 13px;
+}
+.new form button {
+  color: white;
+  background: #62d18e;
+  font-size: 20px;
+  display: block;
+  margin: 40px 0 0 350px;
+  padding: 1px 30px;
+  border: 1px;
+  border-radius: 5px;
+}
+.new a {
+  font-size: 20px;
+  top: -30px;
+  left: 25%;
+  float: left;
+  position: relative;
+  margin-left: 100px;
 }
