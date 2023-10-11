@@ -14,7 +14,7 @@ export const App = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Thread />} />
-        <Route path="/new" element={<New />} />
+        <Route path="/thread/new" element={<New />} />
       </Routes>
     </div>
   );

@@ -31,19 +31,21 @@ export const New = () => {
   return (
     <div className="new">
       <h2>スレッド新規作成</h2>
-      <form>
-        <input
-          value={text}
-          onChange={(inputText) => setText(inputText.target.value)}
-          type="text"
-          name="title"
-          placeholder="スレッドタイトル"
-        />
-        <button type="submit" formAction="/" onClick={makeThread}>
-          作成
-        </button>
-      </form>
-      <a href="/">Topに戻る</a>
+      <div className="inputTitle">
+        <form>
+          <input
+            value={text}
+            onChange={(inputText) => setText(inputText.target.value)}
+            type="text"
+            name="title"
+            placeholder="スレッドタイトル"
+          />
+          <button type="submit" formAction="/" onClick={makeThread}>
+            作成
+          </button>
+        </form>
+        <a href="/">Topに戻る</a>
+      </div>
     </div>
   );
 };
