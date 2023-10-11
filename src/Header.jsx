@@ -1,5 +1,10 @@
 export const Header = () => {
-  return <h1>掲示板</h1>;
+  return (
+    <div className="header">
+      <h1>掲示板</h1>
+      <a href="./new">スレッドをたてる</a>
+    </div>
+  );
 };
 
 export default Header;
