@@ -1,12 +1,9 @@
 import { useState } from "react";
 
 export const New = () => {
-  const fetchForm = document.querySelector(".fetchForm");
-  //   const submitter = document.querySelector("button[value=save]");
   const [text, setText] = useState("");
 
   const makeThread = () => {
-    // const formData = new FormData(fetchForm);
     fetch(
       "https://2y6i6tqn41.execute-api.ap-northeast-1.amazonaws.com/threads",
       {
