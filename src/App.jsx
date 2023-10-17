@@ -4,6 +4,7 @@ import "./App.css";
 import { Thread } from "./thread";
 import { Header } from "./Header";
 import { New } from "./new";
+import { Post } from "./viewPost";
 
 /**
  * @type {() => JSX.Element}
@@ -15,6 +16,7 @@ export const App = () => {
       <Routes>
         <Route path="/" element={<Thread />} />
         <Route path="/thread/new" element={<New />} />
+        <Route path="/thread/:postId" element={<Post />} />
       </Routes>
     </div>
   );
