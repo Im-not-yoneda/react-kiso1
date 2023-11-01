@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-
-import { useLocation, useParams } from "react-router-dom";
+import { useParams, useLocation } from "react-router-dom";
+import { CreatePost } from "./createPost";
 
 export const Post = () => {
   const params = useParams();
@@ -10,7 +10,7 @@ export const Post = () => {
 
   useEffect(() => {
     fetch(
-      `https://2y6i6tqn41.execute-api.ap-northeast-1.amazonaws.com/threads/${params.postId}/posts`,
+      `https://railway.bulletinboard.techtrain.dev/threads/${params.postId}/posts`,
       { method: "GET" }
     )
       .then((response) => response.json())
@@ -23,8 +23,13 @@ export const Post = () => {
   }, [params]);
   return (
     <div className="post">
-      <h2>{titleName}</h2>
-      <ul>{allpost}</ul>
+      <div className="post-all">
+        <h2>{titleName}</h2>
+        <ul>{allpost}</ul>
+      </div>
+      <div className="post-create">
+        <CreatePost title={titleName} />
+      </div>
     </div>
   );
 };
