@@ -69,6 +69,9 @@ h2 {
   position: relative;
   margin-left: 100px;
 }
+.post {
+  padding-bottom: 50%;
+}
 .post li {
   font-size: 25px;
   width: 45%;
@@ -76,4 +79,30 @@ h2 {
   padding: 20px 15px;
   list-style: none;
   background-color: white;
+}
+.post-all {
+  position: relative;
+}
+.post-create {
+  position: absolute;
+  top: 26%;
+  right: 10%;
+}
+.post-create input {
+  font-size: 20px;
+  padding-left: 15px;
+  width: 335px;
+  height: 150px;
+  border: none;
+}
+.post-create button {
+  font-size: 30px;
+  width: 350px;
+  height: 75px;
+  display: block;
+  border: none;
+  border-radius: 12px;
+  color: #d9d9d9;
+  background-color: #62d18e;
+  margin-top: 40px;
 }
