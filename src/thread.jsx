@@ -7,12 +7,9 @@ export const Thread = () => {
 
   // 配列を取得する
   useEffect(() => {
-    fetch(
-      "https://2y6i6tqn41.execute-api.ap-northeast-1.amazonaws.com/threads?offset=30",
-      {
-        method: "GET",
-      }
-    )
+    fetch("https://railway.bulletinboard.techtrain.dev/threads", {
+      method: "GET",
+    })
       .then((response) => response.json())
       .then((result) => {
         const titles = result.map((item) => (

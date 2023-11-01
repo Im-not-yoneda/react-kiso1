@@ -4,14 +4,11 @@ export const New = () => {
   const [text, setText] = useState("");
 
   const makeThread = () => {
-    fetch(
-      "https://2y6i6tqn41.execute-api.ap-northeast-1.amazonaws.com/threads",
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ title: text }),
-      }
-    )
+    fetch("https://railway.bulletinboard.techtrain.dev/threads", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ title: text }),
+    })
       .then((response) => {
         if (!response.ok) {
           console.log("error!");
@@ -34,7 +31,6 @@ export const New = () => {
             value={text}
             onChange={(inputText) => setText(inputText.target.value)}
             type="text"
-            name="title"
             placeholder="スレッドタイトル"
           />
           <button type="submit" formAction="/" onClick={makeThread}>
